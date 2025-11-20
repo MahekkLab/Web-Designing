@@ -77,3 +77,8 @@ Users can choose from Aptitude, HTML, JavaScript, and General Knowledge quizzes.
 7.Conclusion
 
 The **CareerPrep Quiz Portal** is a simple but powerful educational tool designed to help students learn and practice important subjects effectively. With its clean design, interactive quiz system, and flashcard mechanism, the project demonstrates practical knowledge of web development using HTML, CSS, and JavaScript. It is useful for academic learning as well as real-world self-study.
+
+
+Team Members:
+1. Patel Shivani IAR/15537
+2. Sutariya Mahek IAR/15882
