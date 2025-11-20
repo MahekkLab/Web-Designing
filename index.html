@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CareerPrep Quiz Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>🎓 CareerPrep</h1>
+      <p class="tagline">Test • Learn • Grow</p>
+    </header>
+
+    <!-- Home Screen -->
+    <section id="home" class="screen active">
+      <h2>Select a Quiz</h2>
+      <div class="category-list">
+        <button class="category" data-category="aptitude">🧩 Aptitude</button>
+        <button class="category" data-category="html">🌐 HTML</button>
+        <button class="category" data-category="javascript">💻 JavaScript</button>
+        <button class="category" data-category="general">📚 General Knowledge</button>
+      </div>
+      <div class="mode">
+        <button id="quizMode" class="btn primary">Start Quiz</button>
+        <button id="flashMode" class="btn">Flashcards</button>
+      </div>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz" class="screen">
+      <div class="quiz-header">
+        <div id="quizCategory"></div>
+        <div id="quizProgress"></div>
+        <div id="quizTimer"></div>
+      </div>
+      <div id="questionBox"></div>
+      <div id="optionsBox"></div>
+      <div class="controls">
+        <button id="nextBtn" class="btn primary">Next ➜</button>
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result" class="screen">
+      <h2>Quiz Complete!</h2>
+      <p id="scoreText"></p>
+      <button id="retryBtn" class="btn">Try Again</button>
+      <button id="homeBtn" class="btn ghost">Back to Home</button>
+    </section>
+
+    <!-- Flashcard Screen -->
+    <section id="flashcards" class="screen">
+      <div id="flashCategory"></div>
+      <div id="flashCard" class="card">
+        <div id="flashFront" class="flash face front"></div>
+        <div id="flashBack" class="flash face back"></div>
+      </div>
+      <div class="flash-controls">
+        <button id="prevFlash" class="btn ghost">◀ Prev</button>
+        <button id="flipFlash" class="btn primary">Flip</button>
+        <button id="nextFlash" class="btn ghost">Next ▶</button>
+      </div>
+      <button id="backHomeFlash" class="btn ghost">Back to Home</button>
+    </section>
+
+    <footer class="footer">
+      <small>© 2025 CareerPrep — Practice Makes Perfect</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
